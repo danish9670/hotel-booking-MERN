@@ -1,3 +1,12 @@
+require('dotenv').config(); // load .env file
+
+const mongoose = require('mongoose');
+const URI = process.env.MONGO_URI;
+mongoose.connect(URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
 const express = require('express');
 const cors = require('cors');
 const path = require('path');

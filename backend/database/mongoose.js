@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = "mongodb+srv://harshits0147:Harsh123%40@cluster0.thsfpgk.mongodb.net/HotelManagement";
+const URI = process.env.MONGO_URI;
 
 mongoose.connect(URI)
   .then(() => {
