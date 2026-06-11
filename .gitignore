@@ -1,9 +1,7 @@
+node_modules/
 .env
-# Environment variables
-MONGO_URI=mongodb+srv://yourUsername:yourPassword@cluster0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-JWT_SECRET=your_jwt_secret
-DATABASE_URL=your_database_url
-# Ignore node_modules directory
-NODE_ENV=development
-# Ignore node_modules directory
-node_modules
+.DS_Store
+dist/
+build/
+*.log
+.vscode/
